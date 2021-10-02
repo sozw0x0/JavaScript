@@ -1,0 +1,178 @@
+.top__mv {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: url(../img/mv.png) center / cover;
+}
+
+.top__mv--main--ttl {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.top__mv--sub--ttl {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.main__lead {
+  background-color:black;
+  opacity: 0.87;
+  color: #fff;
+}
+
+.main__lead--ttl {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.top__service--ttl {
+  font-size: 30px;
+  text-align: center;
+}
+
+.top__service--list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.top__service--item {
+  width: 49%;
+  margin-top: 20px;
+  margin-right: calc(100% - (49% * 2));
+}
+
+.top__service--item:nth-child(2n) {
+  margin-right: 0px;
+}
+
+.top__news {
+  background-color:black;
+  opacity: 0.87;
+  color: #fff;
+}
+
+.top__news--content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top__news--ttl {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.top__news--btn {
+  font-size: 14px;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  padding: 6px;
+  width: 150px;
+  height: 35px;
+  background-color: #cd0224;
+  color: #fff;
+}
+
+.top__news--item {
+  display: flex;
+  margin-top: 10px;
+  background-color: #fff;
+  color: black;
+  align-items: center;
+}
+
+.top__news--item:hover{
+  opacity: 0.5;
+}
+
+.top__news--item--link {
+  display: flex;
+  padding: 20px 0;
+}
+
+.top__news--item--date {
+  margin-left: 15px;
+}
+
+.top__news--item--ttl {
+  margin-left: 15px;
+}
+
+.top__blog--ttl {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.top__blog--list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.top__blog--item {
+  width: 32%;
+  margin-top: 20px;
+  margin-right: calc((100% - (32% * 3))/2);
+}
+
+.top__blog--item:last-child {
+  margin-right: 0px;
+}
+
+.top__blog--date {
+  font-size: 14px;
+}
+
+.top__blog--item--ttl {
+  font-size: 18px;
+}
+
+.top__company {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 0;
+}
+
+.top__company--item{
+  width: 50%;
+}
+
+.top__company--link {
+  display: inline-block;
+  width: 100%;
+  line-height: 10;
+  text-align: center;
+}
+
+.top__company--item--desc {
+ 
+  background-color: #cd0224;
+}
+
+.top__company--item--recruit {
+  background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+
+  .top__service--item {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.top__blog--item {
+  width: 100%;
+  margin-top: 20px;
+}
+}

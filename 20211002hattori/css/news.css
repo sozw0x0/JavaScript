@@ -1,0 +1,32 @@
+
+.news__item--link {
+  display: flex;
+  padding: 20px 0;
+  border: solid 1px black ;
+}
+
+.news__item:not(:first-child) {
+  margin-top: 10px;
+}
+
+.news__ttl {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.news__item--date {
+  margin-left: 15px;
+}
+
+.news__item--ttl {
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .news__item--link{
+    padding: 10px 0;
+    font-size: 14px;
+  }
+
+}

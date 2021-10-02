@@ -1,0 +1,31 @@
+.recruit__new--graduates--ttl,.recruit__career--ttl {
+  font-size: 25px ;
+  border-bottom: solid 1px black;
+}
+
+.recruit__new--graduates--message,.recruit__career--message {
+  padding: 20px 0;
+}
+
+.recruit__new--graduates--info,.recruit__career--info {
+  width: 100%;
+}
+
+th {
+  width: 30%;
+  padding: 10px 0;
+  text-align: center;
+  border: solid 1px black;
+  background-color: #f5f5f5;
+}
+
+td {
+  text-align: left;
+  width: 70%;
+  padding-left: 10px;
+  border: solid 1px black;
+}
+
+.recruit__career {
+  margin-top: 80px;
+}

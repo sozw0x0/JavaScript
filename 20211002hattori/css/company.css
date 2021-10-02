@@ -1,0 +1,17 @@
+.company__date {
+  width: 100%;
+  border-bottom: solid 1px black;
+}
+
+th {
+  width: 30%;
+  padding: 20px 0;
+  text-align: center;
+  border-top: solid 1px black;
+}
+
+td {
+  text-align: left;
+  width: 70%;
+  border-top: solid 1px black;
+}

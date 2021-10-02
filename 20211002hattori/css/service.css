@@ -1,0 +1,35 @@
+.service__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-top: solid 1px black;
+}
+
+.service__item:last-child {
+  border-bottom: solid 1px black;
+}
+
+.service__item--img {
+  width: 290px;
+}
+
+.service__item--content {
+  width: calc(100% - 330px);
+}
+
+.service__item--ttl {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+
+.service__item--img{
+  width: 100%;
+}
+
+.service__item--content {
+  width: 100%;
+}
+}

@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro","Yu Gothic Medium", "游ゴシック Medium", sans-serif;
+  line-height: 1.7;
+}
+
+.wrap {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.wrap__s {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.pdg {
+  padding: 80px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .wrap{
+    width: 85%;
+  }
+
+  .wrap__s {
+    width: 75%;
+  }
+}
+
+.flex__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page__ttl {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: url(../img/mv.png) center / cover;
+}
+
+.ttl {
+  font-size: 30px;
+}
+
+.btn {
+  margin: 30px auto 0;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 0;
+  width: 300px;
+  background-color: #cd0224;
+  color: #fff;
+}
+
+/*herder*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 30px;
+  background-color: #fff;
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+
+.header__logo  img{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 60px;
+  height: 20px;
+}
+
+.header__nav--list {
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.header__nav--item {
+  margin-right: 30px;
+}
+
+.header__nav--item:last-child {
+  margin-right: 0;
+}
+
+.drawer__nav {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+  .header__nav {
+    display: none;
+  }
+
+  .menu {
+    display: inline-block;
+    width: 36px;
+    height: 32px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+  }
+
+  .menu__line--top,
+  .menu__line--middle,
+  .menu__line--bottom {
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    position: absolute;
+    transition: 0.5s;
+  }
+
+  .menu__line--top {
+    top: 0;
+  }
+
+  .menu__line--middle {
+    top: 14px;
+  }
+
+  .menu__line--bottom {
+    bottom: 0;
+  }
+
+  .menu.open span:nth-of-type(1) {
+    top: 14px;
+    transform: rotate(45deg);
+  }
+
+  .menu.open span:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .menu.open span:nth-of-type(3) {
+    top: 14px;
+    transform: rotate(-45deg);
+  }
+
+  .drawer__nav{
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    background: #fff;
+    transition: .7s;
+  }
+
+  .drawer__nav--list {
+    padding-top: 80px;
+    text-align: center;
+  }
+
+  .drawer__nav--item {
+    margin-top: 40px;
+    color: #0033cc;
+    font-size: 18px;
+  }
+
+  .in {
+    transform: translateX(100%);
+  }
+}
+
+/*header*/
+
+/*contact__form*/
+
+.contact__form {
+  text-align: center;
+  background-color: #f5f6f9;
+}
+.contact__form--ttl{
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 60px;
+}
+
+/*contact__form*/
+
+/*footer*/
+
+.footer {
+  padding: 20px 0;
+  background-color: black;
+  opacity: 0.87;
+  color: #fff;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 12px;
+}
+
+.footer__nav--list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__nav--item:not(:first-child)::before{
+  content: "|";
+  display: inline-block;
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+  
+  .footer__copyright {
+    margin:auto 0px;
+  }
+
+  .footer__nav--item {
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .footer__nav--item:not(:first-child)::before {
+    display: none;
+  }
+}
+
+
